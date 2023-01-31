@@ -70,6 +70,11 @@ For installation, you need to add a few repositories to your helm repo list and 
 indexed in your local machine, you can directly run the `cluster_config.sh` script under `ml/hack` that will take care
 of everything for you.
 
+### Install Helm
+```bash
+$ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+```
+
 ### Install Fission
 KubeML requires a Kubernetes Cluster and Fission installed to work. To install fission,
 it is recommended to use Helm.
@@ -101,7 +106,7 @@ $ kubectl create namespace $METRICS_NAMESPACE
 
 Then get the helm chart and install
 
-$ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
 
 ```bash
 $ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts

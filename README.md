@@ -101,6 +101,8 @@ $ kubectl create namespace $METRICS_NAMESPACE
 
 Then get the helm chart and install
 
+$ curl https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3 | bash
+
 ```bash
 $ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 $ helm repo add stable https://charts.helm.sh/stable

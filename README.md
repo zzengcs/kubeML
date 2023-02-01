@@ -82,6 +82,7 @@ it is recommended to use Helm.
 ```bash
 $ export FISSION_NAMESPACE="fission"
 $ kubectl create namespace $FISSION_NAMESPACE
+$ kubectl create -k "github.com/fission/fission/crds/v1?ref=v1.18.0"
 
 
 $ helm repo add fission-charts https://fission.github.io/fission-charts/
